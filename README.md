@@ -1,13 +1,9 @@
 # lua_class
 lua implement different class styles by various features of lua
 
+simple basic style
+
 ```lua
-
-------------------------------------------------------------
--- simple basic style
-------------------------------------------------------------
-
-
 
 local Point = Class()
 
@@ -22,10 +18,11 @@ Point.add = function (this, bPoint)
 	return this
 end
 
-------------------------------------------------------------
--- test run
-------------------------------------------------------------
+```
 
+test
+
+```lua
 -- obj = setmetatable({}, mt) --MyClass()
 local a = Point(1,2)
 local b = Point(3,4)
@@ -41,13 +38,8 @@ tprint{
 tprint{
 	a.add(b);
 }
-
-
-------------------------------------------------------------
--- output
-------------------------------------------------------------
-
-
+```json
+output:
 __noname__ = {
   [1] = {
     ["_methods"] = {
@@ -75,16 +67,11 @@ __noname__ = {
 }
 [Finished in 0.0s]
 
+```
 
+beta style 1 (similar normal c/c++ or java style)
 
-------------------------------------------------------------
--- other beta style
-------------------------------------------------------------
-tprint{
-static [[x=1]];
-class [[MyClass]] : aaa ()
-}
-
+```lua
 
 class [[MyClass]] : aaa {
 	static [[x=1]];
@@ -92,9 +79,12 @@ class [[MyClass]] : aaa {
 	y = 2;
 }
 
-------------------------------------------------------------
--- output
-------------------------------------------------------------
+```
+
+beta test output
+
+```json
+
 222	x=1
 111	MyClass
 555	table: 0x55c04bf569f0
@@ -106,5 +96,5 @@ __noname__ = {
 555	table: 0x55c04bf546e0	table: 0x55c04bf54750
 [Finished in 0.0s]
 
-
 ```
+
