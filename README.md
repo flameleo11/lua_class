@@ -1,7 +1,18 @@
 # lua_class
 lua implement different class styles by various features of lua
 
-simple basic style
+Current version: v0.0.1 (beta)
+Compatible Lua version: 5.1 5.2 5.3
+
+# todo
+more style
+more function
+function implement by your choice
+
+
+
+no colon style (simple basic version)
+class methods defined, init and call, all of function without colon
 
 ```lua
 
