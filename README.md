@@ -1,11 +1,13 @@
 # lua_class
 lua implement different class styles by various features of lua
 
-
+```lua
 
 ------------------------------------------------------------
 -- simple basic style
 ------------------------------------------------------------
+
+
 
 local Point = Class()
 
@@ -103,3 +105,6 @@ __noname__ = {
 222	x=1
 555	table: 0x55c04bf546e0	table: 0x55c04bf54750
 [Finished in 0.0s]
+
+
+```
